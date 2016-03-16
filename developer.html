@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer | My Pet</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet"> 
+    <link href="css/animate.min.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="data:image/png;base64,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" alt="logo"></h1><h1>Mili</h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="readme.html">Read Me</a></li>
+                         <li class="active"><a href="developer.html">Developer</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    <!--/#header-->
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Expand Mili</h1>
+                            <p>----------------------------------------------</p>
+                            <p>files: </p>
+                            <p>----------------------------------------------</p>
+                            <p>html files: There are three web pages.</p>
+                            <p>1) index.html (home page)</p>
+                            <p>2) readme.html (instructions to pet Mili)</p>
+                            <p>3) developer.html (instructions for developer)</p>
+                            <p>css folder: css files to format the pages</p>
+                            <p>fonts folder: fonts resources</p>
+                            <p>images folder: images used in three web pages</p>
+                            <p>petmoods.js : control the buttons on home page</p>
+                            <p>js folder : javascript files for other actions</p>
+                            <p> banana.mp3 : the audio file which plays if you click the mood buttons </p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="company-information" class="padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="stateMachine.png" class="img-responsive" alt="" >
+                </div>
+                <div class="col-sm-6 padding-top">
+               <h2>This is Mili's state machine.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--/#services-->
+
+        <!--/#action-->
+        <section id="team">
+            <div class="container">
+                <div class="row">
+                  
+                    <div id="team-carousel" class="carousel slide wow fadeIn" data-ride="carousel" data-wow-duration="400ms" data-wow-delay="400ms">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators visible-xs">
+                            <li data-target="#team-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#team-carousel" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="team-single-wrapper">
+                                        <div class="team-single">
+                                            <div class="person-thumb">
+                                                <img src="images/pet/relaxed.png" class="img-responsive" width= "200px" alt="">
+                                                    </div>
+                                            <div class="social-profile">
+                                                <ul class="nav nav-pills">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="person-info">
+                                            <h2>Relaxed</h2>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="team-single-wrapper">
+                                        <div class="team-single">
+                                            <div class="person-thumb">
+                                                <img src="images/pet/friendly.jpg" class="img-responsive" alt="">
+                                                    </div>
+                                            <div class="social-profile">
+                                                <ul class="nav nav-pills">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="person-info">
+                                            <h2>Friendly</h2>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="team-single-wrapper">
+                                        <div class="team-single">
+                                            <div class="person-thumb">
+                                                <img src="images/pet/happy.jpg" class="img-responsive" alt="">
+                                                    </div>
+                                            <div class="social-profile">
+                                                <ul class="nav nav-pills">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="person-info">
+                                            <h2>Happy</h2>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="team-single-wrapper">
+                                        <div class="team-single">
+                                            <div class="person-thumb">
+                                                <img src="images/pet/surprised.png" class="img-responsive" alt="">
+                                                    </div>
+                                            <div class="social-profile">
+                                                <ul class="nav nav-pills">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="person-info">
+                                            <h2>Surprised</h2>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="team-single-wrapper">
+                                        <div class="team-single">
+                                            <div class="person-thumb">
+                                                <img src="images/pet/crazy.jpg" class="img-responsive" alt="">
+                                                    </div>
+                                            <div class="social-profile">
+                                                <ul class="nav nav-pills">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="person-info">
+                                            <h2>Crazy</h2>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="team-single-wrapper">
+                                        <div class="team-single">
+                                            <div class="person-thumb">
+                                                <img src="images/pet/shy.png" class="img-responsive" alt="">
+                                                    </div>
+                                            <div class="social-profile">
+                                                <ul class="nav nav-pills">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="person-info">
+                                            <h2>Shy</h2>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="team-single-wrapper">
+                                        <div class="team-single">
+                                            <div class="person-thumb">
+                                                <img src="images/aboutus/2.jpg" class="img-responsive" alt="">
+                                                    </div>
+                                            <div class="social-profile">
+                                                <ul class="nav nav-pills">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="person-info">
+                                            <h2>TBD</h2>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6">
+                                    <div class="team-single-wrapper">
+                                        <div class="team-single">
+                                            <div class="person-thumb">
+                                                <img src="images/aboutus/1.jpg" class="img-responsive" alt="">
+                                                    </div>
+                                            <div class="social-profile">
+                                                <ul class="nav nav-pills">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="person-info">
+                                            <h2>TBD</h2>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Controls -->
+                        <a class="left team-carousel-control hidden-xs" href="#team-carousel" data-slide="prev">left</a>
+                        <a class="right team-carousel-control hidden-xs" href="#team-carousel" data-slide="next">right</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--/#team-->
+    
+    <footer id="footer">
+                       <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>Drexel 2016. All Rights Reserved.</p>
+                        <p>Crafted by Jin Zhang</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>

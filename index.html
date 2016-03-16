@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | My Pet</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+       
+       <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+               
+               <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="data:image/png;base64,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"  alt="logo"></h1></a><h1>Mili</h1>
+                    </div>
+               
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="readme.html">Read Me</a></li>
+                    <li class="active"><a href="developer.html">Developer</a></li>
+                    </ul>
+               </div>
+       
+            </div>
+              </div>
+    </header>
+    <!--/#header-->
+
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1>Welcome to my home.</h1>
+                        <h2> banana timer </h2>
+                        <button onclick="myVar = setTimeout(myFunction, 3000)">start</button>
+                        
+                        <button onclick="clearTimeout(myVar)">Stop it</button>
+                        
+                        <h2 id="bananas"> You have 0 banana(s)</h2>
+                        
+                                        <div id="test"></div>
+                    </div>
+                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image" width="800" height="480">
+                   <p id="pet"> <img SRC="http://www.pages.drexel.edu/~jz499/cs164/lab8/images/pet/relaxed.png" alt="pet1"class ="slider-house"  style="width:180px;height:300px;"></p>
+                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
+                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!--/#home-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                              <P id = "storyButton" >  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABXklEQVRoQ+1aMU7DQBCclRxEYQlaKkJDQeUUBIkqP4CnwEu4p8AD4uQHSUVB5VS04QHJIptYQubOUuzLOUZz/d7t7MzuWTcW9HxJz/MHAXTNYC0Ds+R0iJPoBdAEkGGe7OT+LlDOmgGyBDbPYuaZ61AngCL5QbSA4Px3cDgA5am6BrYjFwg3gHH8CuChijw8gCKDNzHTRxsLTgDpbbwWwdlxANBMTHq1F4DZOFZbQEcMQMzUWuw6CRGAz3F1UAY+P9595oqL65s/+xFAWRJbE5OBimCCS8hrAzg2O2gP9B4Ae4A9YBExv4U8dzanUN1N7LnY1u3IABloqTNKiBKihPgq8aMBvgs17AWOUY7RhtIpwyghSii0hI7M4FiJSQuPrrr+r8WUm3w6iJZVm6mDm/gL2CR7m3w5VTub1Sg0Echl2E8JXe1s1qdGNmvLngsWzl8NgpXa9ezedQJtz/8GMH/NMUoNW0QAAAAASUVORK5CYII=" width="70" height="48" alt=""></p>
+                        </div>
+                        <h2>TELL A STORY</h2>
+            
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <P id = "giveBananaButton" >  <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEdUlEQVRoQ+2YXWxTZRjH/8/p11pXtjWLOJbQJYIFA9oNuisNqzd6BySg3KEw4yVwhfGGbrszMdEbLnRm6J0xkXEhxETSxqHO4jZ0mIxktDRsMnXus/Rj/XjN29PCaTnn9LS2OW3CuWq20/f9/Z/n/zzv85bQ5A81OT+eCtA7g7pmYHS0y5mOmcdisUyvvcNsffe9UEulAdFNwKcXnaP/LCZPZdKMtu+0weVxgJkyHd7eW2uViNBNgD944BIBJ6WwjDJer+dWoCkEcEh/sC9AoEMFYEbsnNcz/XHzCJhx91DKEJYABwb6p7xNI0DMQrGVKs2CbjVQiLL/pnuAmMEvjToBZw/1T32iJRO6C+CQgWAfE2E5Dv9I2EYU3Wa0vrGrd+JHNSG6C5j77cjoUvL+aTlII7LYLpje3H0w+LWSCF0F3P3j+CsryeWJTktXjm8hHkImm8p9dmIL7ciAGexRx4Ff7A0pYH72eNDZ6vIYyZzji6bXML36AxwshX1IPma27TlH+8Zl26uuGdgKfRAxCS07pdENbdzEs4l5tOZqIf9Yumfo5et9clnQVQC7NyyhFPGiiRBaNyaLWY2ONer7qaOhBLDwyACIFbXPHGDyPrA+UcxKJkaeWaHBBAxdAlHRLCSm4HcgdvsJVuqfk3WLLhZiYV87SFiV7Syr3wOpvxtdgEL02RawfAVgYit99Ai2NB2cNjWEhVh45AiIXZaNfiIElBYwf9HU+YB6b+zQXQAL+3pANANQu7x9rgOpv578V4tznF767qiuAkTfkx8gtyw89z33v9zTtvdVcl2+oZuAsvCcbOUqkJa5TarYh3+t7l1IE3x8Dticlo++yhhRdwEs7HODaEzRNpwgvQqsXJOHVzmBC1+oWwZYZOgMGHyKBcsJeNv89xqQfVhV9OuSAbHTCGMABuSp8n/l8Lxo5XzPX1EZ4KTr1iwDOa8LhjNg2bOqUS9EXg1esKVh69lFL34TUQ1CrYqYRYZO5u3SU27DnG3U4PkCVtcJ2n/lq7Jr/V8B4kSZ5UVaHrxQsBy+dFSQklqf/5z2fzuoBb7qGsiPwhfK+lxKEb8DbE6pc2n0fdU1oLlApTtwy6xPAlsL6vDm5+bJHditNfIVt1EWGbkAxnwVbZAIA5u/qluGL1glvCYL5Wd3Pj2qt0WpMj7XcHClFil9twrbaLaQpjGgFDw6Kz9RyqWuwoKVW0L1HGCR4TEwvF32QEouildBpRO1dAHBHodlxztaW6Xa/ooCVC8ehZYYuyNewtXaYunulu4ZmNqOajmktNSbsoB7Q/ziUTy78wgnF4D4XW3+lhLUMOqaamB48PXEsWMuy94XrNVD8534WGDp+qKSw0lL5Mu20fMnXlv4c+lh95cfrley3uN3TZ0PYGy7Wi/wsgIuvn948OfJpc8qEmB0rMFoD8Bi+0jpClhdNJS/pd6FZg+/hWz0PFIbe5DdtD5ahvtZMCUhmJdBpkUYnhlX+vG11sCl69VsnK43qNL6TwXoFfmyRaw3mNb9/wPBBqhADCOATgAAAABJRU5ErkJggg==" width="70" height="48"></p>
+                        </div>
+                        <h2>GIVE A BANANA</h2>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                              <P id = "praiseButton" > <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAES0lEQVRoQ+1YXW8TRxQ9d9cmHzjEEIUqkWhtkkipbAm3KhUSQhgheOGh6QPPIe/9/AflF3QbeK0wUl/6hPMLuvwCghKrKHKwEQgQEo2jpCgJuzvVjL3+yO56Z7xOK1RfKVKkvXPnnHvu+N4Zwgdu9IHjx4DAf63gQIGBAhEzMCihiAmMvPz/oUA5g0UC8uB/hBSAGgNWiaGqAb+kS1jtlspKBjkH+J4RUgTkACTBUAVgMsCcLeF+r1J0VaCx8YMG6MA9OAjdwlL6iQDVtMo8UnYM9xrkgzHWE/F1WCL8AgQSKGdwiwj3FDJT0xiuuCAEecIfItuSxhiWZksoSLoLN18Cjc0fqQRq+Na0XaT5/04CFRXw7l4aw2cqSvgS2MygElY2QeQYUGxkZqGHBICfjZlSPQky5iHQQ+nI7KPko1JKfgSKRPhKacc+OzOGldkSpBT0EIhSPn3joVBGXgJZsChAdpiOt04cOyyGA2jQGUNSe48pbR9DJB96Zl3urtJXAs/tIbxhQx384zEd06fHkZ6awOTEmPh2sLOLnVevsf3iRWCueiZQzsIk4LKqCi+dIbxyOsGPjhzDxXNnkTwx6huOE3m9tg5rb6/jOwMezq6Lzh9qfmfgBxB+Dl3Z5rDPCOt2Pbvtdu3CfCB414+TePloFY5ltZYy/DhTgiGDwUOgkkLSSYiRYFwmAPfhNV91Rjrc5z6eRG7+jFSItxvl9nLa1naRSldRk1kc1MiUVPArH5nsuwD3tmpChdjwME6m0w/Gpj563PhWhYaHZJgdM1Y7sW6zUIEIizJZ8CNw8/rnMkubPluVKk6m+aDrMa6EQcvmbb+PXafRcgZSTc2vhFQJhLJlKNAdc+mwX/dxmp+H4zBBONdtA5tfDuwTHS4Xc2cxfVp6EA3FLxwcXKG7pilVQq6TONQSJDatEdQQb8ZWOcRy6IXXCi2bHSOG1JVShsThMuI94MalrAI2OVda5m2qZVIEuHsYCV5Ga9YYbGqFzH8xh8lT3v4gB9Xfq2cCMiQq9jD+YseaO6emT+F81veXpTcODI/pjsnv1E2TVkDmTLxzNPzpJJrB+Rx041IG8XisN8DeVbdp2fwpEgFXCfs4DL8+sWGPiknUtfPZT5CanohOgOEZdOTIMDs6tLIC7UjKGXia3ZYTw1OnNbz15TDXwS+QYXqebyIR4GQ2M/CMHWtWQtwFXLv+5dzueHKsVVuyejBsg2BAg3E4826IyAR4oPKnWCBdPIeIAdD9SeWXmXHt/a9Xr174DZp4YpEznnHAgI5CEPC+EhDnov76VnC79hNrdD/hWIuXNw5+59/Zt3ne0cPuGffhoHC423Zj3RcF2n+h+OHm70H637jVPhKzb/L5ABVWwFCEjmJYtv2I9JVAWH2w7/JFMKRAMOHApLumeEOKYv8qgShAg9YOCBxFVlViDhRQydZR+A4UOIqsqsQcKKCSraPw/QcrYGZAO6gsDAAAAABJRU5ErkJggg==" width="70" height="48"> </p>                      </div>
+                        <h2>PRAISE HIM</h2>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                             <P id = "singButton" >   <img class="icon icons8-Microphone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAC0klEQVRoQ+1ZTWsTURQ9d4oWcWHWBaGCphvB6Q9IM8GdEZyuEkFIpi5dGH+JceFSJwHB1E1HMO4kk+YHOAE3NoIFoeu4UKjSufKmGSmlbfLeSxOmzEBWmXvfOffcj/feEBL+UMLxIyUQK+i2BjWAKwDMMaoGTFzfKK00p6G+tgLu1vcM9v92JgB+HG+AxUsFZ/3GUIeINoHXra8Bge4oggiccnZV0TYy0yIwSpvnOgDAcJyH2YaqDy0CmtGPMWupoEXAbe2wauSO2jnlrDIOZUMB4NET/0wCd3NLEc5Pvb0zeb55aSnjUDa8EAQSn0KJJ5DWwKi051bEiU+hxBLIr7ej/n996eqZ/X3SOfBj71fkp7tVlG7r0gZioQtDoFq6NY2dBBqbg/kokHgCaQ2MEnBuRZz4FKqUbvY1jpNR/Bncb25+i46kM2+j1VL2GcDaR8rGu4E7FwIiYjrHShH9jfKKGc+VmSmwtt72CcgfcFh4XLkd8P4fXzaVBHhavGy9an4xF8joMNDd3ipasoNFaRKv2R8aRFRhxottr1gTi7pvd6pMXBtHJALOVI9vItbsdp0IT5m5ue3dr86EgGW3TSZ8BvOQQAXfKwayC4v3Iz/gDogyxFhV8aOkgFg8VkGQCGE4Pe+eJ0MiZ3+0DYSuAK8afe2Lrf8kDvthwEDDALqnRVJEPATyBFRBh3eoOuC1CQgHObtdNQh1ANdkFADwM2TUel5R+VZuKgQOc7mTOcBvm8AWRZE97a6U+xwpZXgLuOL7XkHrYndqBE6KfNzb4/9UevwkiioX8TjnKYFxERr9nypwWqDSFJplCpmWayJEHsDyaEBlTvhmJrYbQzHwAOzCQDfwHaUtyFFuSjVgWu4yQjwAQewexU8AVnnEHPDB8GHgfeA7u7JO1Ajk3al8mTkONug60nikDcSiZtIJyMp8nu8rKXCegGR9pwRkIzbt9/8B5v1kQH7QU4YAAAAASUVORK5CYII=" width="70" height="48"></p>                                </div>
+                        <h2>SING THE BANANA SONG</h2>
+                      
+            </div>
+        </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                             <P id = "robBananaButton" >  <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEjklEQVRoQ+2ZwU8jdRTHv2+mULa0bKt/gOWkt4WTiRfgJrgkU3f3oFnj7MGDIAsc2pWmhJI2NMKB7m7gymD0pIQ14HJSigmJnuwePW1PJsbDouBlhT4zrS2/mc50pgt22MhcoJ35zbzP7/t97/fmV8JLftBLHj8uAbxW8P+hAO9cHwQwB9AgwAUA8zS8rf/1/HBUoBo87TZGykNuIHjnehGga2Au0sh2f6vETuOdAR6PFkAYaHgwY49GtnRlmh68M8r1CxgxGtl65DSmdp4fjyogbNY+0/BWQ7zOAGIApidb3dAcnAEAgDjGyZrNxtahnGaDz6hA7+rhqQIAno6FKpPmxpp2Y8WYXShwthywBXAxMecCUJ8tpnQlFxh7IE67SWB9rL0CQm7YWPPcAJxs1uy8pwqo6eUwTv5eBkgBowigoGXj860AeZoDamoxD6JJoJaHBOby9nr23qhbCDMAM2t4HpouTdNBJZEtrBld5jA6D5eJSBWfUysArpNYnV0sAKT7HrW2j8HH65lEh1uA6OphkYBr4vWsqyn5YqWPr5TM94muHPUBvEaEPsMY4ElpLGT4Tj/ftAqps0vVqRcA9I9aJu5YvWoPj67+qRCovhi5BW9YT8Cx0lhPwyLoEoABEi6Vj3u19EzD7NkFF105Uol47YWDZ7pTGg9qVuNtAdTkYh9k+rk6yCQBY0jLxltq5l4UgpsE39RCamppEITTJo4FFRjzWjaers3Io+/3Datt7fvff/t16KP3btVBW4VwCr45wOyiCpAguyGT17VsvF4hNr/bzxNh0iyxGcBqYWtmK6uqY77e3kKpJX3lnasPMLlIvNHaWz9UPh5R5Cj09uehZkGZy+p/CaCB8GErABVJLVpeMcj2AdTWAGMx/gngN0B01UqBv9DzLDj85SsXQwErAGBay8Tz5gA3d/f7UIYCKZCPDfUf6Odvj+9W38TO+fhiZdBge9sc+CCZK8my7zXD81son7fHC5aV6aw8rgHej2dKnV1dRgAbBayC8hzg1mTyx+6eyJtGBbioZROuXsw9t9DNiZmCP9A90NHpN05wi23EQOzbc7XS3uY77nLg5t1kWpZ9c1eC5rLOd7RMwrIvsbKSpwD6ZpYOIMs+MbZvtExccZuMngP4OjrRFeg22cgX0dLTlXLpdHgGcONuMk+o9jeB4FVIsiTE6t5G3gFMzBSJqguRvyvwS4ff/7pA4NpGngAoU+mwr/z8WT1gCclgKLIgABxomXjEyT76eU8Abnwyo5B0+hp4LJV7w8FX9e5UaO7KMS17z3Gf0xsAwf/M/GTjYa5PTeeiOPE9FbpTwzuBnRreAEwkS0SotBEM3N94sDCl/1/fpahG68pGbQdQpj6N+spSfaZJQv9X+QV9Uwtq6jMFJJ3uMLho7toO8O5EUpUI1VdJ5j++fpgLi/ZQU0sl/KsOmO9r2URFnQtjIb2FqP6cpNuH1zce5Ay7Y6rhXZn3tEyi6Y8cbVdAt5B8IlV2EiQZSs0+JhU0gBWAVadK1HYAN7X9Il3jeovwIgUtxnIJ4LUylwp4rcA/ORQ5T5kLb0QAAAAASUVORK5CYII=" width="85" height="45"></p>
+                                </div>
+                        <h2>ROB HIM OF HIS BANANA</h2>
+                      
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                           <P id = "giftButton" >    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFMElEQVRoQ+2Zy29UVRzHP787r8602EJbHmqhRNESSAqE4EoZExfGDRA3Jpq0TTBuJMo/IMNGl5LgxkcCjRsXhuLGGDeM+EqIAo0SiyC2AtpAC21tZ+bO4x5z7qPOEObZ8TbEnlVn5tx7vp/f9/f7nXtPhQd8yAOunxWA5XZwxYH7OaDiiQ7gXWA/SAeok8BhSSZmmu1YUxxQ8UQvyIAjTg2DHAP23SN2WJJHBm04MfrlzFtfNQNmyQAqntgBnHEibQPoKHdg9wf1rPOdnHG/PwxyomiedkW70/BoAsDRi0A/8JmrYh8oLVoDrHYB7oJaAGl154w619iwm5eSWs0A0GqR5BFxcl/GgXYHgiEX4ARKTSKyHpSO+jEVP5oE9mqXJJnQfzc0GgbwchnL+hiRHl2okkwMqfhRnRIDrguuK2qf4wizoHpdpRcAXTtv6rpp1IWGAFQ8MViUy0WpYXebURDdgYqGl1IMux1pxO1OBZCAWxNDjdRD3QBOx+GCW7QTwCZXQB4IAuMgXpQ9iGmgE5ROL/e3xaXde9j1sFOSCT2n5tEIgBd9ry3GQU7bea9UFiHsposuYleIt0zJ5wlQgzr/i+qhbhcaAdCb04gbzQOSTFx0i1cXYj9YJkjEhlAqA1iIxFwYL2VGQcV13rtt+ATIDq/Aaw6/2+vqmW/PVfHF1ln+WqXSIFMIWZR6GJFolYV0ge/4z1PIAbDbpd5t9Sam94AyQ11FSQShp4J4vSdcBJWoV7y+Z8UU+vDxkbgE7J3z3qKs6tqu1/tK5px/b6zqNfeZMK4KaujVqwfK7hMVAT56ckR3FLfL1Ld+kwD0ouMHL+/fXG71KgCnvbZRn3qgiQAcvLy/rM4VgHLWrDhQFJmGU8i7x/njY3XXQue29hJzpi/N1l9Hh/qqbrRVJ+hV/3cAjz69lpY1YYLRIOG2IDO/z9sbzo2vb1HIWjU7sctvB7TwSHuIh3rbUBaogoURNLAKCiMo3L08Ry5d4OY3t2qC8BWg7ZEYWw702MLT0xmUpVAFp3QkIAQiAULRIIGIwbXPbzJ7bb4qhG8AG/Z0sX5PJ/lUHvPv3KLwexVqkMiqEMFYkNujd+2UqjR8AQiEDXr2rrPTJjNjlhXvCdUQse4oqck0v576Y/kBvOhn7pjkMwWCP1whfOo7JGVivuKcqhR/zu/eghEyiHW3VHXBFwfW9LXTs3ct6TtO9Fvf+ACZmrOFW5u6kQWz5HPq7QG7JjTA1E8zFdPIF4BtA48Rag2yMJmyRTsAetMSCAX0WxnkdetUWBvXknrHOcCLdbVgzuUY+6T8K7AvAH0v9RJeFSQ9bTrpMvI94U+/vW9umy/Hyb2w2/6tbUOM7HyeS8O/la0DXwB07+/a3kFqKrNYwMGzP9Py/hclwjKvPU/+me2LbTW6OsL1s7e4M1b+EcM3gO7+1aRuZ7By/+6yxRDF4jWB7lzRrhYmz03z17mp5XVAr/7EixuJrYuSup0uaaMaQg8v8t6mFu1sYf5GivEv/6z4aOGLA1qUTiPtQm4hT3a+8kYWbgvZRV8t+vq+vgHoxXQ73fTcevtRwpzLUjALJY8SYgg68mLAlZHrzN90ulal4SuA50SkPcxDva1YeYXosy1LIQHDFj43voA5m636COFB+Q7gFeiGp7owwgYdm9tsEN2hsrO5moU3HeDH42MzYp/51z6W/kamJnYd2lr1PKqmN7ILx3+JKzhZzxnR0gDUhMDgzkNbq/7joyaA2uPu/8wVAP9jXrriigPL7cA/CKVgT79ZBk4AAAAASUVORK5CYII=" width="70" height="48">    </p>                                </div>
+                        <h2>GIVE A GIFT</h2>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+    </section>
+    <!--/#services-->
+    <!--/#action-->
+     <!--/#features-->
+     <!--/#clients-->
+     <footer id="footer">
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-12 text-center bottom-separator">
+                     <img src="images/home/under.png" class="img-responsive inline" alt="">
+                         </div>
+                 
+                 
+                 <div class="col-sm-12">
+                     <div class="copyright-text text-center">
+                         <p>&copy; Drexel 2016. All Rights Reserved.</p>
+                         <p>Crafted by Jin Zhang</a></p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </footer>
+
+     <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src = "petmoods.js"></script>
+    <script src = "timer.js"></script>
+  <audio id = "banana" src = "http://www.pages.drexel.edu/~jz499/cs164/lab8/banana.mp3" preload ="auto"></audio>
+</body>
+</html>
